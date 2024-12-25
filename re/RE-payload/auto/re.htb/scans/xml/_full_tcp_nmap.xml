@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Dec 20 12:37:27 2024 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/cbjs/htb/re/RE-payload/auto/re.htb/scans/_full_tcp_nmap.txt -oX /home/cbjs/htb/re/RE-payload/auto/re.htb/scans/xml/_full_tcp_nmap.xml re.htb -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/cbjs/htb/re/RE-payload/auto/re.htb/scans/_full_tcp_nmap.txt -oX /home/cbjs/htb/re/RE-payload/auto/re.htb/scans/xml/_full_tcp_nmap.xml re.htb" start="1734658647" startstr="Fri Dec 20 12:37:27 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734658648"/>
+<taskend task="NSE" time="1734658648"/>
+<taskbegin task="NSE" time="1734658648"/>
+<taskend task="NSE" time="1734658648"/>
+<taskbegin task="NSE" time="1734658648"/>
+<taskend task="NSE" time="1734658648"/>
+<taskbegin task="SYN Stealth Scan" time="1734658648"/>
+<taskprogress task="SYN Stealth Scan" time="1734658679" percent="23.52" remaining="101" etc="1734658780"/>
+<taskprogress task="SYN Stealth Scan" time="1734658709" percent="59.86" remaining="41" etc="1734658750"/>
+<taskend task="SYN Stealth Scan" time="1734658736" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1734658736"/>
+<taskend task="Service scan" time="1734658774" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734658779"/>
+<taskend task="Traceroute" time="1734658779"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1734658779"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1734658779"/>
+<taskbegin task="NSE" time="1734658779"/>
+<taskprogress task="NSE" time="1734658810" percent="99.63" remaining="1" etc="1734658810"/>
+<taskend task="NSE" time="1734658819"/>
+<taskbegin task="NSE" time="1734658819"/>
+<taskend task="NSE" time="1734658819"/>
+<taskbegin task="NSE" time="1734658819"/>
+<taskend task="NSE" time="1734658819"/>
+<host starttime="1734658648" endtime="1734658819"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.144" addrtype="ipv4"/>
+<hostnames>
+<hostname name="re.htb" type="user"/>
+<hostname name="re.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Ghidra Dropbox Coming Soon!"><elem key="title">Ghidra Dropbox Coming Soon!</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osfingerprint fingerprint="SCAN(V=7.80%E=4%D=12/20%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=6764CB03%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=108%GCD=1%ISR=108%TS=U)&#xa;OPS(O1=M539NW8NNS%O2=M539NW8NNS%O3=M539NW8%O4=M539NW8NNS%O5=M539NW8NNS%O6=M539NNS)&#xa;WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)&#xa;ECN(R=Y%DF=Y%TG=80%W=FFFF%O=M539NW8NNS%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="264" difficulty="Good luck!" values="BC170535,B2D571CC,DADB8294,50E41FA0,AADDAE8E,B089D120"/>
+<ipidsequence class="Busy server or unknown class" values="6A7F,6B16,6BB1,6C44,6CDF,6D7A"/>
+<tcptssequence class="none returned (unsupported)"/>
+<hostscript><script id="clock-skew" output="0s"><elem key="count">1</elem>
+<elem key="stddev">0</elem>
+<elem key="median">0</elem>
+<elem key="mean">0</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 61175/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 39973/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 18622/udp): CLEAN (Timeout)&#xa;  Check 4 (port 29025/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2024-12-20T01:39:42&#xa;  start_date: N/A"><elem key="date">2024-12-20T01:39:42</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><trace port="445" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="14.45"/>
+<hop ttl="2" ipaddr="10.10.10.144" rtt="14.89" host="re.htb"/>
+</trace>
+<times srtt="14458" rttvar="513" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1734658819"/>
+<taskend task="NSE" time="1734658819"/>
+<taskbegin task="NSE" time="1734658819"/>
+<taskend task="NSE" time="1734658819"/>
+<taskbegin task="NSE" time="1734658819"/>
+<taskend task="NSE" time="1734658819"/>
+<runstats><finished time="1734658819" timestr="Fri Dec 20 12:40:19 2024" elapsed="172.25" summary="Nmap done at Fri Dec 20 12:40:19 2024; 1 IP address (1 host up) scanned in 172.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

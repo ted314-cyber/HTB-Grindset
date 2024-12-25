@@ -1,0 +1,8 @@
+[*] http found on tcp/80.
+
+
+
+[*] microsoft-ds found on tcp/445.
+
+
+

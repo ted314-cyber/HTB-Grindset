@@ -1,0 +1,7 @@
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	IPC$            IPC       Remote IPC
+	malware_dropbox Disk
+SMB1 disabled -- no workgroup available
+
