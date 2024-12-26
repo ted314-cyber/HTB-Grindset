@@ -1,2 +1,0 @@
-# HTB-grind
-# HTB-Grindset
